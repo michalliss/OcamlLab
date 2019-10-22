@@ -56,7 +56,6 @@ print_string "\n";;
 
 let rec initSegment (xs, ys) =
     match (xs, ys) with
-    | ([], []) -> true
     | ([], _ ) -> true
     | (h::tl, []) -> false
     | (h1::t1, h2::t2) -> if(h1 = h2) then initSegment(t1, t2) else false;;
@@ -78,7 +77,7 @@ let rec replaceNth (xs, count, elem) =
 let res6 = replaceNth ([1;2;3;4;5], 2, 7);;
 open Printf
 let () = List.iter (printf "%d ") res6;;
-print_string "\n";;
+print_string "\n";;3
 
 
 
