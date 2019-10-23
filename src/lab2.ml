@@ -1,15 +1,17 @@
 let rec reverse xs =
     let rec reverse1 (xs, temp) =
-    if xs = [] then temp
-    else reverse1(List.tl xs, List.hd xs :: temp)
+        match xs with
+        | [] -> temp
+        | h::t -> reverse1(t,h::temp)
 in reverse1(xs, []);;
 
 
 let rec podziel xs =
     let rec podziel2 (xs, x1s, x2s) =
-        if xs = [] then (reverse(x1s), reverse(x2s))
-        else if ((List.hd xs) mod 2 ) = 0 then podziel2(List.tl xs, (List.hd xs :: x1s), x2s)
-        else podziel2(List.tl xs, x1s, (List.hd xs :: x2s))
+        match xs with
+        | [] -> (reverse(x1s), reverse(x2s))
+        | h::t -> if (h mod 2 ) = 0 then podziel2(t, (h :: x1s), x2s)
+        else podziel2(t, x1s, (h :: x2s))
 in podziel2((xs,[],[]));;
 
 podziel [1;2;3;4];;
@@ -23,12 +25,12 @@ print_string "\n";;
 
 
 let polacz x1 x2 =
-    let rec polacz2 x0 x1 x2 pb =
-    match (x1, x2) with
+    let rec polacz2 x0 left right pb =
+    match (left, right) with
     | ([], []) -> reverse x0
-    | (hd::tl, []) -> polacz2(hd::x0) tl x2 pb
-    | ([], hd::tl) -> polacz2(hd::x0) x1 tl pb
-    | (h1::t1, h2::t2) -> if(pb = 0) then polacz2(h1::x0) t1 x2 1 else polacz2(h2::x0) x1 t2 0
+    | (hd::tl, []) -> polacz2 (hd::x0) tl right pb
+    | ([], hd::tl) -> polacz2 (hd::x0) left tl pb
+    | (h1::t1, h2::t2) -> if(pb = 0) then polacz2(h1::x0) t1 right 1 else polacz2(h2::x0) left t2 0
 in polacz2 [] x1 x2 0;;
 
 let res3 = polacz [1;2;3] [9;3;2];;
