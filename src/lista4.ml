@@ -86,11 +86,13 @@ let rec depthSearch (Graph gfunc) start =
     let rec depthSearchHelp visited curr =
         match curr with
         | [] -> []
-        | h::t -> if List.mem h visited then depthSearchHelp visited t
+        | h::t -> if List.mem h visited then depthSearchHelp(visited) t
                     else h::depthSearchHelp (h::visited) (gfunc h @ t)
     in depthSearchHelp [] [start];;
 
 let res6 = depthSearch g 4;;
 let () = List.iter (printf "%d ") res6;;
 print_string "\n";;
+
+
 
