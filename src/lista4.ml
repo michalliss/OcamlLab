@@ -6,6 +6,7 @@ let f x = raise Not_found;;
 
 type 'a bt = Empty | Node of 'a * 'a bt * 'a bt
 
+
 let rec breadthBT tt =
     let rec breadthBThelp queue resList =
         match queue with
@@ -13,6 +14,7 @@ let rec breadthBT tt =
            | Empty::t -> breadthBThelp t resList
            | Node(value, left, right)::t -> breadthBThelp (t @ [left;right]) (value::resList)
      in breadthBThelp [tt] [];;
+
 
 
 let tt = Node(1,

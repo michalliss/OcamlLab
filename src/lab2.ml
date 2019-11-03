@@ -6,6 +6,7 @@ let rec reverse xs =
 in reverse1(xs, []);;
 
 
+
 let rec podziel xs =
     let rec podziel2 (xs, x1s, x2s) =
         match xs with
