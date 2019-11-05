@@ -7,7 +7,7 @@ let f x = raise Not_found;;
 type 'a bt = Empty | Node of 'a * 'a bt * 'a bt
 
 
-let rec breadthBT tt =
+let rec breadthBTtail tt =
     let rec breadthBThelp queue resList =
         match queue with
            | [] -> List.rev resList
@@ -15,7 +15,13 @@ let rec breadthBT tt =
            | Node(value, left, right)::t -> breadthBThelp (t @ [left;right]) (value::resList)
      in breadthBThelp [tt] [];;
 
-
+let rec breadthBT tt =
+        let rec breadthBThelp queue =
+        match queue with
+        | [] -> []
+        | Empty::t -> breadthBThelp t
+        | Node(value, left, right)::t -> value::breadthBThelp (t @ [left;right])
+        in breadthBThelp [tt];;
 
 let tt = Node(1,
  Node(2,
