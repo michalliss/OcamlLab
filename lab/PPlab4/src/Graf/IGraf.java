@@ -1,4 +1,4 @@
-package com.company;
+package Graf;
 
 import java.util.List;
 
