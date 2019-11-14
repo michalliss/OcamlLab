@@ -1,6 +1,7 @@
 package Graf;
 
 import Utils.Edge;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,7 +11,7 @@ public class Graf<W, S> implements IGraf<W, S> {
     private HashMap<W, HashMap<W, S>> adjList;
     private ArrayList<W> list;
 
-    public Graf(ArrayList<W> nodes, ArrayList<Edge<W,S>> edges) {
+    public Graf(ArrayList<W> nodes, ArrayList<Edge<W, S>> edges) {
         this.list = nodes;
 
         adjList = new HashMap<>();
@@ -18,7 +19,7 @@ public class Graf<W, S> implements IGraf<W, S> {
             adjList.put(node, new HashMap<>());
         }
 
-        for (Edge<W,S> edge : edges) {
+        for (Edge<W, S> edge : edges) {
             adjList.get(edge.from).put(edge.to, edge.label);
         }
     }
@@ -44,8 +45,6 @@ public class Graf<W, S> implements IGraf<W, S> {
         ArrayList<W> ns = new ArrayList(adjList.get(w).keySet());
         return ns;
     }
-
-
 
 
 }

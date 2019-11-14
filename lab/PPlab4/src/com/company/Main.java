@@ -19,15 +19,19 @@ public class Main {
         nodes.add(6);
         nodes.add(7);
 
-        edges.add(new Edge<Integer, String>(1,"l3",4));
         edges.add(new Edge<Integer, String>(1,"l1",2));
         edges.add(new Edge<Integer, String>(2,"l2",3));
         edges.add(new Edge<Integer, String>(3,"l3",4));
-
+        edges.add(new Edge<Integer, String>(6,"l4",7));
 
 
         Graf<Integer, String> g1 =  new Graf<Integer, String>(nodes, edges);
         Sciezka.sc2(g1, 1, 4);
+        Sciezka.sc2(g1, 2, 4);
+        Sciezka.sc2(g1, 1, 6);
+
+        System.out.println();
+
         Spojne.spojne(g1);
     }
 }

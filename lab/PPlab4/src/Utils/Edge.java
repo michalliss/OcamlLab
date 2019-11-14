@@ -1,6 +1,6 @@
 package Utils;
 
-public class Edge<W,S> {
+public class Edge<W, S> {
     public W from;
     public S label;
     public W to;

@@ -1,6 +1,6 @@
 package Utils;
 
-public class Node<T>{
+public class Node<T> {
     public Node parent;
     public T data;
     public int rank;
