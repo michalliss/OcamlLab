@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1a1324f-6407-4e81-8fdc-786ee837dedc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hUtpLZOxNFNqtatj.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPlab4/Graf/Graf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPlab4/Graf/Graf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPlab4/Graf/Sciezka.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPlab4/Graf/Sciezka.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPlab4/Graf/Spojne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPlab4/Graf/Spojne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPlab4/META-INF/PPlab4.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PPlab4/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PPlab4/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graf/Graf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graf/Graf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graf/IGraf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graf/IGraf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graf/Sciezka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graf/Sciezka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graf/Spojne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graf/Spojne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/DisjointSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/DisjointSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utils/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +84,7 @@
       <workItem from="1573668487096" duration="3831000" />
       <workItem from="1573676231267" duration="8562000" />
       <workItem from="1573685180079" duration="622000" />
-      <workItem from="1573751777727" duration="2961000" />
+      <workItem from="1573751777727" duration="3691000" />
     </task>
     <servers />
   </component>
